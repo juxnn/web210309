@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- html>head>link+style^body -->
+<html>
+<head>
+    <link rel="stylesheet" href="03.mystyle1.css">
+    <style>
+        h1{
+            text-decoration: underline;
+            font-size:100px;
+            /* link에서 쓰는 h1스타일과 이것과 우선순위는 같다. */
+            /* 따라서 아래꺼가 적용됨 */
+            /* 반대로 link가 아래에 있으면 link가 적용된다. */
+        }
+        h1.error{
+            background-color: tomato;
+        }
+        /* 순서를 신경쓰고싶지 않으면 더 높은 우선순위로 작성한다. */
+        /* head style안에서 하는걸 internal style이라고 한다. */
+    </style>
+</head>
+<body>
+    <!-- h1.error>lorem3 -->
+    <h1 style="font-size:5px" class="error">Lorem, ipsum dolor.</h1>
+    <!-- h1 element안에 들어간 style을 inline style이라고 한다. -->
+    <!-- font size:   50px  (external 최초적용)
+                    ~ 100px (internal 우선순위는 같지만, 순서 때문에 적용)
+                    ~ 5px   (inline이라 우선순위가 앞서서 적용) -->
+</body>
+</html>

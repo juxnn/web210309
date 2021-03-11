@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- html>head>style^body -->
+<html>
+<head>
+    <style>
+        div > h1{
+            /* h1 element인데, div element의 자식인 h1 */
+            color: red;
+        }
+
+        /* 클래스가 note 요소의 자식인 p 요소 */
+        .note > p{
+            text-decoration:underline;
+        }
+
+        .error >h1{
+            background-color: gold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- div>h1>lorem3^p>lorem7 -->
+    <div>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <!-- div가 h1과 p를 감싸고 있음. div는 h1, p의 부모 element이다. h1과 p는 div의 자식 elements h1과 p는 형제관계 -->
+
+    <!-- .error>h1>lorem3^p>lorem7 -->
+    <div class="error">
+        <h1>Lorem, ipsum dolor.</h1>
+        <!-- red는 적용 안됨, gold, blue 적용 -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+
+    <h1>Lorem, ipsum dolor.</h1>
+
+    <div class="note">
+        <h1>not underline</h1>
+        <p>underline</p>
+    </div>
+
+  
+</body>
+</html>

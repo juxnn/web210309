@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- html>head>style^body -->
+<html>
+<head>
+    <style>
+        /* id:100점, class:10점, elem:1점 */
+        h1{
+            color:red;
+        }
+        .note{
+            color:yellow;
+        }
+        h1.special{
+            color:blue;
+        }
+        /* 같은 우선순위일 때에는 더 아래쪽이 적용 */
+        /* 20점이라서 순서상관없이 얘가 적용 */
+        .note.special{
+            color:pink
+        }
+        #header1{
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*5>lorem3 -->
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note special">Eveniet, nesciunt natus!</h1>
+    <h1 class="special">Eveniet, nesciunt natus!</h1>
+    <h1 id ="header1" class="note special">Hic, laborum soluta.</h1>
+    <h1>Quo, tenetur voluptatum!</h1>
+    <h1>Odit, distinctio officia.</h1>
+</body>
+</html>

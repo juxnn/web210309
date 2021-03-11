@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--html>head>style^body-->
+<html>
+<head>
+    <style>
+        .note{
+            color:blue;
+        }
+        h1.note{
+            text-decoration: underline;
+        }
+        p.note{
+            background-color:yellow;
+        }
+        /* p element랑, class=note인 elemnet의 font-size를 결정한다. */
+        p, .note{
+                font-size: 10px;
+        }
+        /* class=note or error 인 h1 element의 font-size를 결정한다. */
+        /* class=note, error 둘 다 해당되는 h1 element의 font-size를 결정한다.*/
+        h1.note.error{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!--h1*3>lorem3^p*3>lorem-->
+    <h1 class="note spec">Lorem, ipsum dolor.</h1>
+    <h1 class="note error">Eos, soluta magnam!</h1>
+    <!--h1.note.error-->
+    <h1 class="note error">Animi, nisi exercitationem!</h1>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus maiores aperiam similique, cumque deleniti dolorem vero repudiandae adipisci recusandae, quisquam ea asperiores libero veritatis nam voluptatum perferendis laboriosam a sed?</p>
+    <p>Laudantium hic maxime maiores numquam, asperiores libero a repellendus dolor provident aliquid, placeat cumque impedit sunt aliquam laborum earum esse nisi alias nam! Necessitatibus illo sed, hic voluptas sequi cupiditate.</p>
+    <p>Molestias optio, in consequatur quisquam iusto repellat reprehenderit, voluptatem voluptatibus deleniti accusamus quam reiciendis? Ab cumque distinctio dolorem obcaecati id tempora non provident, nobis quasi reiciendis nulla nam laudantium rem?</p>
+    <!-- p.note>lorem3 -->
+    <p class="note">Lorem ipsum dolor sit.</p>
+    <!-- div.note -->
+    <div class="note"></div>
+    <!-- .note -->
+    <div class="note"></div>
+    <!-- p#para1>lorem7 -->
+    <p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    
+    <!-- h1#head1.note.error -->
+    <h1 id="head" class="note error"></h1>
+</body>
+</html>
