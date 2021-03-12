@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body,html {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #percent {
+            font-size: 100%;
+            /* 부모 element 기준으로 100% */
+        }
+
+        .em {
+            font-size: 0.75em;
+            /* 1em = 100% */
+        }
+        .rem{
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et optio, rerum laudantium quasi reprehenderit nobis
+        repellendus dolorum ex sint reiciendis vitae nisi sit neque. Ipsum porro odit tempora quos quidem.</p>
+
+    <p id="percent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat libero quos non dolores, recusandae,
+        eaque iusto quam, perspiciatis magni dignissimos expedita. Veritatis modi alias consectetur dolores magni qui
+        similique rerum!</p>
+    <p class="em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt magnam voluptate doloribus temporibus
+        dicta quibusdam nulla cupiditate, assumenda laboriosam expedita reiciendis recusandae id ad accusantium nemo
+        pariatur eos doloremque molestiae!</p>
+
+    <!-- .em>p.em>lorem -->
+    <div class="em">
+        <p class="em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum optio aliquam architecto fugit,
+            cumque vero ea. Eum quasi suscipit fuga, cupiditate voluptate asperiores earum ipsa incidunt hic, dolores
+            sapiente enim?</p>
+        <!-- 폰트사이즈 : 0.75 x 0.75 -->
+    </div>
+    <!-- .rem>p.rem>lorem -->
+    <div class="rem">
+        <p class="rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis porro optio fugiat
+            consequuntur dolorem eligendi amet, provident sed ratione dignissimos aut tenetur, asperiores molestiae enim
+            nesciunt nemo voluptatum, nihil qui.</p>
+        <!--  r은 루트를 의미 -->
+    </div>
+</body>
+
+</html>
