@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .wrapper {
+            position: relative;
+            width: 600px;
+            height: 500px;
+            border: 5px solid green;
+        }
+
+        .absolute-elem {
+            /*
+        조상 중에 포지션된 요소 기준,
+        없다면 루트 요소 기준
+
+        *포지션된 요소: static이 아닌요소
+        */
+            position: absolute;
+            top: 5px;
+            width: 300px;
+            height: 200px;
+            border: 5px dotted blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .wrapper>.absolute-elem{alsolute} -->
+    <div class="wrapper">
+        <div class="absolute-elem">alsolute</div>
+        <!-- 위 element는 div, body, head 세명이 조상이다. -->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, molestiae minima odio recusandae ratione
+            porro eos accusantium tenetur, animi eveniet harum, consectetur eius laboriosam voluptatibus error? Saepe ea
+            enim modi.</p>
+    </div>
+</body>
+
+</html>
