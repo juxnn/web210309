@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p:nth-child(1){
+            background-color: blue;
+        }
+        /* p element이면서 n번째 자식인지? */
+        p:nth-child(2){
+            background-color: green;
+        }
+        p:nth-child(odd){
+            text-decoration: underline;
+        }
+        p:nth-child(even){
+            font-weight: bold;
+        }
+
+        table, th, td{
+            border: 1px solid black
+
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            height: 30px
+        }
+        tr:nth-child(odd){
+            background-color: #ccc;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- div>p*5>lorem -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, magni repellendus? Soluta adipisci officia dolor, animi eius voluptate ducimus fugit, odit odio eaque maxime, commodi reiciendis repudiandae aut recusandae quibusdam!</p>
+        <p>Ipsa maxime natus odit molestiae minima fuga rerum obcaecati magnam minus incidunt quos iste perspiciatis similique alias pariatur quia quibusdam error, sint voluptatibus odio laudantium esse eius. Doloremque, molestiae officiis?</p>
+        <p>Veniam hic labore dignissimos consequuntur doloribus qui illum, vel dolores ea perferendis voluptatem dolore vitae corrupti atque quidem est voluptatum quasi eaque itaque deserunt voluptate. Neque rem eligendi consequatur recusandae!</p>
+        <p>Vero nihil ab veritatis quibusdam et, nulla voluptatem reiciendis id excepturi sapiente voluptate ad totam magnam quam? Modi ipsa, nesciunt itaque eum doloribus ex tempora numquam, odio magnam, quos quasi?</p>
+        <p>Reprehenderit iure at suscipit. Corporis, sit soluta. Impedit veniam at doloribus, beatae sunt reiciendis dolorum? Minus, ex? Ipsa praesentium ullam aperiam eos quidem esse nisi, placeat magni. Dignissimos, omnis reiciendis!</p>
+    </div>
+    <!-- table>tr>th*3>lorem1^^tr*4>td*3>lorem1 -->
+    <table>
+        <tr>
+            <th>Lorem.</th>
+            <th>Commodi!</th>
+            <th>Repudiandae.</th>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Architecto.</td>
+            <td>Architecto?</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Magni?</td>
+            <td>Minima.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Blanditiis.</td>
+            <td>Delectus!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Provident.</td>
+            <td>Pariatur!</td>
+        </tr>
+    </table>
+</body>
+
+</html>
