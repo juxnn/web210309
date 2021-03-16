@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/lib/w3schools23.css">
+    <link href="https://fonts.googleapis.com/css?family=Source Code Pro" rel="stylesheet">
+    <script src="all.min.js"></script>
+    <style>
+        .hombar{
+            background-color:white;
+            margin: 0px;
+            padding: 20px 16px 0.15px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .hompart1{
+            font-size: 37px;
+            line-height: 1;
+            letter-spacing: 3px;
+            font-family: 'fontawesome', Times, serif;
+        }
+        .hompart1:hover{
+            color:green;
+        }
+        .dotcom{
+            color:green;
+        }
+        .hompart2{
+            font-family: 'Segoe UI',Arial,sans-serif;
+            font-size: 15px;
+            margin-right: 20px;
+            line-height: 50px;
+            letter-spacing: 4px;
+        }
+        .hompart3{
+            line-height: 1.5;
+            padding: 6px 14px;
+            position: relative;
+            /* top: 7px; */
+            color: #fff;
+            
+            background-color: #4CAF50;
+            border-radius: 5px;
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-weight: bold;
+        }
+        .hompart3:hover{
+            background-color: yellow;
+        }
+        .wrapper{
+            display: flex;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: grey;
+        }
+        .main{
+            color: white;
+            font-size: 30px;
+            padding: 15px;
+        }
+        .main:hover{
+            background-color: green;
+        }
+        .mbox{
+            display: flex;
+            height: 2000px;
+        }
+        .mpage1{
+            background-color: #f1f1f1;
+            width: 220px;
+            padding-top: 20px;
+        }
+        .mpage2{
+            background-color: white;
+            flex-grow: 1;
+            padding: 16px 32px 32px 32px;
+        }
+        .mpage3{
+            background-color: rgb(255, 238, 0);
+            width: 300px;
+            text-align: center;
+            font-size: 50px;
+        }
+        /* .pg1cat{
+             border: 5px solid black;
+        } */
+        .pg1catname{
+            font-size: 20px;
+            margin-top: -4px;
+            margin-bottom: 4px;
+            padding-left: 16px;
+        }
+        .pg1catsel{
+            font-size: 15px;
+            padding: 2px 1px 1px 16px;
+        }
+        .pg1catsel:hover{
+            background-color: rgb(228, 226, 226);
+        }
+        a{
+            text-decoration: none;
+        }
+        .mpg2header{
+            font-size: 42px;
+        }
+    </style>
+</head>
+
+<body>
+<!-- .hombar>.hompart*2>lorem1 -->
+<div class="hombar">
+    <div class="hompart1">w3schools<span class="dotcom">.com</span></div>
+    <div class="hompart2">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+    <div class="hompart3">LOG IN</div>
+</div>
+
+<!-- .navbar>.wrapper>.main*6>lorem1^^.wrapper>.main*3>lorem1 -->
+<div class="navbar">
+    <div class="wrapper">
+        <!-- fontaswome 에서 검색해서 찾았다. -->
+        <div class="main"><i class="fas fa-bars"></i></div>
+        <div class="main"><i class="fas fa-home"></i></div>
+        <div class="main">HTML</div>
+        <div class="main">CSS</div>
+        <div class="main">JAVASCRIPT</div>
+        <div class="main">MORE<i class="fas fa-caret-down"></i></div>
+    </div>
+    <div class="wrapper">
+        <div class="main"><i class="fas fa-adjust"></i></div>
+        <div class="main"><i class="fas fa-globe-americas"></i></div>
+        <div class="main"><i class="fas fa-search"></i></div>
+    </div>
+</div>
+
+<!-- .mbox>.mpage*3 -->
+<div class="mbox">
+    <div class="mpage1">
+        <!-- .pg1cat*9>.pg1catsel*5>lorem1 -->
+        <div class="pg1cat">
+            <div class="pg1catname">CSS Tutorial</div>
+            <div class="pg1catsel">
+                <a href="https://www.naver.com">CSS HOME</a>
+            </div>
+            <div class="pg1catsel">CSS Introduction</div>
+            <div class="pg1catsel">CSS Syntax</div>
+            <div class="pg1catsel">CSS Selecors</div>
+            <div class="pg1catsel">CSS How To</div>
+        </div>
+        <br>
+        <div class="pg1cat">
+            <div class="pg1catname">JavaScript</div>
+            <div class="pg1catsel">Lorem.</div>
+            <div class="pg1catsel">Neque?</div>
+            <div class="pg1catsel">Provident.</div>
+            <div class="pg1catsel">Mollitia.</div>
+            <div class="pg1catsel">Iste!</div>
+        </div>
+        <div class="pg1cat">
+            <div class="pg1catname">Name3</div>
+            <div class="pg1catsel">Lorem.</div>
+            <div class="pg1catsel">Velit!</div>
+            <div class="pg1catsel">Quasi.</div>
+            <div class="pg1catsel">Quasi!</div>
+            <div class="pg1catsel">Illo!</div>
+        </div>
+        <div class="pg1cat">
+            <div class="pg1catname">Name4</div>
+            <div class="pg1catsel">Lorem.</div>
+            <div class="pg1catsel">Ea?</div>
+            <div class="pg1catsel">Dignissimos!</div>
+            <div class="pg1catsel">Inventore.</div>
+            <div class="pg1catsel">Molestias.</div>
+        </div>
+        <div class="pg1cat">
+            <div class="pg1catname">Name5</div>
+            <div class="pg1catsel">Lorem.</div>
+            <div class="pg1catsel">Nostrum.</div>
+            <div class="pg1catsel">Incidunt.</div>
+            <div class="pg1catsel">Repudiandae?</div>
+            <div class="pg1catsel">Praesentium!</div>
+        </div>
+        <div class="pg1cat">
+            <div class="pg1catname">Name6</div>
+            <div class="pg1catsel">Lorem.</div>
+            <div class="pg1catsel">Rem!</div>
+            <div class="pg1catsel">Nesciunt.</div>
+            <div class="pg1catsel">Beatae?</div>
+            <div class="pg1catsel">Blanditiis.</div>
+        </div>
+        <div class="pg1cat">
+            <div class="pg1catname">Name7</div>
+            <div class="pg1catsel">Lorem.</div>
+            <div class="pg1catsel">Magni.</div>
+            <div class="pg1catsel">Aperiam.</div>
+            <div class="pg1catsel">Adipisci.</div>
+            <div class="pg1catsel">Aliquid.</div>
+        </div>
+        <div class="pg1cat">
+            <div class="pg1catname">Name8</div>
+            <div class="pg1catsel">Lorem.</div>
+            <div class="pg1catsel">Cum.</div>
+            <div class="pg1catsel">Odio?</div>
+            <div class="pg1catsel">Numquam.</div>
+            <div class="pg1catsel">Porro.</div>
+        </div>
+        <div class="pg1cat">
+            <div class="pg1catname">Name9</div>
+            <div class="pg1catsel">Lorem.</div>
+            <div class="pg1catsel">Ex!</div>
+            <div class="pg1catsel">Perferendis.</div>
+            <div class="pg1catsel">Ex.</div>
+            <div class="pg1catsel">Accusantium?</div>
+        </div>
+    </div>
+    <div class="mpage2">
+        <div class="mpg2header">CSS Tutorial</div>
+        <div class="box"> HOME </div>
+        <div class="box"> NEXT </div>
+    </div>
+    <div class="mpage3">AD</div>
+</div>
+</body>
+
+</html>

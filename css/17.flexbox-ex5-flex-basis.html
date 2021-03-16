@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            background-color: grey;
+            display: flex;
+            height: 300px;
+        }
+        .item:nth-child(3){
+            font-size: 60px;
+            flex-grow: 1;
+        }
+        .item:nth-child(4){
+            /* flex-basis: 70px; */
+            /* 아래 두 줄 소스와 같다. */
+            flex-basis: auto;
+            width: 70px;
+            
+            /* 남은 영역 말고, 기본 배정된 영역을 얼마나 나눠 가질 것인지 */
+            /* ex4보다 조금 더 넓을 것이다. +70px이 추가되었으니 */
+            flex-grow: 2;
+            
+        }
+        .item:nth-child(5){
+            flex-grow: 1;
+        }
+        .item {
+            font-size: 30px;
+            color: white;
+        }
+        .item:nth-child(odd) {
+            background-color: blue;
+        }
+        .item:nth-child(even) {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.item{$}*5 -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

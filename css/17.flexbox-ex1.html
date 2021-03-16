@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .child{
+        font-size: 20px;
+        color: white;
+    }
+    .child:nth-child(even){
+        background-color: blue;
+    }
+    .child:nth-child(odd){
+        background-color: red;
+    }
+    .container{
+        display:flex;
+        /* 기본이 오른쪽으로 배치가 된다. */
+        height: 300px;
+    }
+</style>
+</head>
+<body>
+<!-- .container>.child{$}*5 -->
+<div class="container"> <!-- flex container 라고 한다. -->
+    <div class="child">1</div> <!-- flex child 라고 한다. -->
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+</div>
+</body>
+</html>
