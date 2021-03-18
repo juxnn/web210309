@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<script>
+    myFunc();
+
+    //정의 자체는 밑에있어도 상관이 없다. (결과는 같다.)
+    //정의된 함수를 맨 위로 끌어올리는게 hoisting 이라고 한다.
+    function myFunc(params){
+        console.log("abc");
+    }
+
+    //변수에 이름없는 함수를 할당.
+    // 이런 경우는 hoisting이 안된다.
+
+    var func2 = function(params){
+        console.log("no name");
+    }
+    func2();
+
+</script>
+</body>
+</html>

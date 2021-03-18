@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- button*4#button$ -->
+    <!-- this의 의미 : document.getElementById('button$')-->
+    <!-- <button onclick="changeImage(document.getElementById('button1'))" id="button1">배로나</button> -->
+    <button onclick="changeImage(this)" id="button1">배로나</button>
+    <button onclick="changeImage(this)" id="button2">하은별</button>
+    <button onclick="changeImage(this)" id="button3">주석경</button>
+    <button onclick="changeImage(this)" id="button4">천서진</button>
+    <hr>
+    <img src="" alt="" id="img1">
+
+    <script>
+        function changeImage(elem){
+            document.getElementById("img1").src=elem.innerHTML + ".jfif";
+        }
+    </script>
+
+</body>
+
+</html>

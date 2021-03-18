@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <br>
+    <input type="text" id="input2">
+    <br>
+    <!-- button>i.fas.fa-plus -->
+    <button onclick="process()"><i class="fas fa-plus"></i></button>
+    <br>
+    <input type="text" id="result" readonly>
+
+
+    <script>
+        function process(){
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+
+            var c = add(a,b);
+            document.getElementById("result").value = c;
+        }
+
+        function add(param1, param2){
+            var result = parseFloat(param1)+parseFloat(param2);
+            //var result = Number(param1+param2); //안되는 소스
+            return result;
+        }
+
+
+    </script>
+</body>
+
+</html>
