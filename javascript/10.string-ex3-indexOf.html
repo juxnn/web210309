@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        //indexOf
+        var str = "abcde fghij klmno";
+        var idx = str.indexOf("fghij"); //6
+
+        console.log("1=" + idx);
+
+        //slice
+        var res = str.slice(6,11);
+        console.log("2=" + res);
+        console.log("3=" + str.slice(6));
+
+        //substring
+        var res2 = str.substring(6,11);
+        console.log("4=" + res2);
+        console.log("5=" + str.substring(6));
+
+        //substr
+        var res3 = str.substr(6,5);
+        console.log("6=" + res3);
+        console.log("7=" + str.substr(6));
+    </script>
+</body>
+
+</html>
