@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <!-- button>i.fas.fa-plus -->
+    <button onclick="add()"><i class="fas fa-plus"></i></button>
+    <ul id="result"></ul>
+
+    <script>
+
+        function add() {
+            var text = document.querySelector("input").value;
+            text = text.trim();
+            var ul = document.getElementById("result");
+            if (text != 0) {
+                //(text) 로 작성해도 된다. 텍스트가 있을 때 라는 뜻
+                //(text != "")
+                ul.innerHTML += "<li>" + text + "</li>";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        console.log("boolean");
+        var a = true;
+        if(a) {
+            console.log("true");
+        } else{
+            console.log("false");
+        }
+
+        //다른 타입도 boolean 처럼 사용 가능(JS Script 에서만 가능)
+
+        console.log("number");
+        // 0이 아니면 true
+        var b = 3;
+        if(b){
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        console.log("string");
+        //빈 스트링이 아니면 true
+        var c = '';
+        if(c) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+        var c = ' ';
+        if(c) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+        
+        console.log("undefined");
+        var d;
+        if(d) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
+
+    </script>
+</body>
+</html>

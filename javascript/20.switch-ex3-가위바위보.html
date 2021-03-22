@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        button {
+            font-size: 100px;
+        }
+
+        div.container {
+            align-items: center;
+            display: flex;
+        }
+
+        div.user {
+            width: 200px;
+            height: 200px;
+            /* border: black solid 1px; */
+            color: green;
+            font-size: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+
+        }
+
+        div.computer {
+            width: 200px;
+            height: 200px;
+            /* border: black solid 1px; */
+            color: red;
+            font-size: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+          
+        }
+
+        div.vs {
+            font-size: 100px;
+        }
+
+        div#result {
+            font-size: 100px;
+        }
+        div#rate{
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button onclick="game(1)"><i class="far fa-hand-rock"></i></button>
+    <button onclick="game(2)"><i class="far fa-hand-scissors"></i></button>
+    <button onclick="game(3)"><i class="far fa-hand-paper"></i></button>
+
+    <br>
+    <br>
+    <!-- div.user+div+.computer -->
+    <div class="container">
+
+        <div class="user"></div>
+        <div class="vs">VS</div>
+        <div class="computer"></div>
+    </div>
+    <div id="result"></div>
+    <div id="rate"></div>
+
+    <script>
+
+        var win = 0;
+        var tie = 0;
+        var lose = 0;
+        function game(user) {
+            // 1: 바위, 2: 가위, 3:보
+            var computer = Math.floor(Math.random() * 3) + 1;
+            setIcon(user, document.querySelector(".user"));
+            setIcon(computer, document.querySelector(".computer"));
+
+            var resultText = "";
+            if (user == computer) {
+                resultText = "비겼습니다.";
+                tie++;
+            } else if (user == 1 && computer == 2) {
+                resultText = "이겼습니다.";
+                win++;
+            } else if (user == 2 && computer == 3) {
+                resultText = "이겼습니다.";
+                win++;
+            } else if (user == 3 && computer == 1) {
+                resultText = "이겼습니다.";
+                win++;
+            } else {
+                resultText = "졌습니다.";
+                lose++;
+            }
+            document.getElementById('result').innerHTML = resultText;
+            document.getElementById('rate').innerHTML = win + "승" + tie + "무" + lose + "패" + "<br>"+"당신의 승률은 " + (win*100/(win+tie+lose)+"% 입니다.");
+        }
+
+
+        function setIcon(hand, elem) {
+            switch (hand) {
+                case 1:
+                    elem.innerHTML = "<i class='far fa-hand-rock'></i>";
+                    break;
+                case 2:
+                    elem.innerHTML = "<i class='far fa-hand-scissors'></i>";
+                    break;
+                case 3:
+                    elem.innerHTML = "<i class='far fa-hand-paper'></i>";
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
