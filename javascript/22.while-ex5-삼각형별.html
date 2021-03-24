@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        * {
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="result"></div>
+    <hr>
+    <!-- #result$@2*3 -->
+    <div id="result2"></div>
+    <hr>
+    <div id="result3"></div>
+    <hr>
+    <div id="result4"></div>
+    <script>
+        var txt = "";
+        var i =0;
+        var j =0;
+        var k =0;
+
+        while(i<5){
+            j=0;
+            while(j<=i){
+                txt +="*";
+                j++;
+            }
+            i++;
+            txt+="<br>";
+        }
+        document.getElementById("result").innerHTML = txt;
+
+
+
+        //  for (var i = 0; i < 5; i++) {
+        //     for (var j = 0; j <= i; j++) {
+        //         txt += "*"
+        //     }
+        //     txt += "<br>";
+        // }
+        // document.getElementById("result").innerHTML = txt;
+
+        /*
+        result2
+        *****
+        ****
+        ***
+        **
+        *
+        */
+        txt = "";
+        i=0;
+        while(i<5){
+            j=5;
+            while(j>i){
+                txt +="*";
+                j--;
+            }
+            i++;
+            txt+="<br>";
+        }
+        document.getElementById("result2").innerHTML = txt;
+
+        // for (i = 0; i < 5; i++) {
+        //     for (j = 5; j > i; j--) {
+        //         txt += "*";
+        //     }
+        //     txt += "<br>";
+        // }
+        // document.getElementById("result2").innerHTML = txt;
+
+        /*
+        
+        result3
+        *****
+         ****
+          ***
+           ** 
+            *
+        */
+        txt = "";
+        i=0;
+        while(i<5){
+            k=0;
+            while(k<i){
+                txt += "&nbsp;";
+                k++;
+            }
+            j=5;
+            while(j>i){
+                txt += "*";
+                j--;
+            }
+            i++;
+            txt += "<br>";
+        }
+        document.getElementById("result3").innerHTML = txt;
+
+        // for (i = 0; i < 5; i++) {
+        //     for (var k = 0; k < i; k++) {
+        //         txt += "&nbsp;";
+        //     }
+
+        //     for (j = 5; j > i; j--) {
+        //         txt += "*";
+        //     }
+        //     txt += "<br>";
+        // }
+        // document.getElementById("result3").innerHTML = txt;
+        /*
+                result4
+                    *
+                   **
+                  ***
+                 ****
+                *****
+                
+                */
+        txt = "";
+        i=0;
+
+        while(i<5){
+            i++;
+            k=5;
+            while(k>i){
+                txt += "&nbsp;";
+                k--;
+            }
+            j=0;
+            while(j<i){
+                txt += "*";
+                j++;
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result4").innerHTML = txt;
+
+        // for (i = 0; i < 5; i++) {
+        //     for (k = 0; k < (4 - i); k++) {
+        //         txt += "&nbsp;";
+        //     }
+        //     for (j = 0; j <= i; j++) {
+        //         txt += "*"
+        //     }
+        //     txt += "<br>";
+        // }
+        // document.getElementById("result4").innerHTML = txt;
+    </script>
+</body>
+
+</html>
